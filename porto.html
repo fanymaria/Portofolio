@@ -1,53 +1,32 @@
-<html>
- <head>
-  <title>
-   Maria's Portfolio
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
- </head>
- <body class="font-roboto bg-white">
-  <header class="flex justify-between items-center p-6">
-   <div class="text-yellow-500 text-3xl font-bold">
-    M.
-   </div>
-   <nav>
-    <ul class="flex space-x-6 text-gray-700">
-     <li>
-      <a class="hover:text-yellow-500" href="#">
-       Home
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-yellow-500" href="#">
-       About
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-yellow-500" href="#">
-       Contact
-      </a>
-     </li>
-    </ul>
-   </nav>
-  </header>
-  <main class="flex items-center justify-between p-12">
-   <div>
-    <p class="text-gray-500">
-     HELLO
-    </p>
-    <h1 class="text-5xl font-bold text-gray-800">
-     I'm Maria Intan
-    </h1>
-    <p class="text-gray-600 mt-4">
-     Freelance Web &amp; Mobile UI/UX Designer
-    </p>
-   </div>
-   <div>
-    <img alt="Maria's Picture" class="relative z-10" height="400" src="Maria.jpeg" width="400"/>
-   </div>
-  </main>
- </body>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Maria Intan Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="flex justify-between items-center p-6 bg-white shadow-md">
+        <div class="text-2xl font-bold text-yellow-500">M.</div>
+        <nav class="space-x-6">
+            <a class="text-gray-700 hover:text-gray-900" href="#">Home</a>
+            <a class="text-gray-700 hover:text-gray-900" href="#">About</a>
+            <a class="text-gray-700 hover:text-gray-900" href="#">Contact</a>
+        </nav>
+    </header>
+    <main class="flex flex-col md:flex-row items-center justify-between p-6 bg-white shadow-md m-6 rounded-lg relative">
+        <div class="absolute top-0 left-0 w-24 h-24 bg-yellow-500 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-24 h-24 bg-yellow-500 rounded-full transform translate-x-1/2 translate-y-1/2"></div>
+        <div class="space-y-4 z-10">
+            <p class="text-gray-500">HELLO</p>
+            <h1 class="text-4xl font-bold text-gray-900">I'm Maria Intan</h1>
+            <p class="text-gray-700">Freelance Web &amp; Mobile UI/UX Designer</p>
+        </div>
+        <div class="mt-6 md:mt-0 z-10">
+            <img alt="Maria's Picture" class="w-80 h-80 object-cover rounded-lg shadow-lg" height="400" src="Maria.jpeg" width="400"/>
+        </div>
+    </main>
+</body>
 </html>
